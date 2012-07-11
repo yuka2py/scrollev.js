@@ -9,7 +9,7 @@
  */
 (function($)
 {
-	$.fn.exscroll = function(options) {
+	$.fn.scrollev = function(options) {
 		options = $.extend({
 			onScrollStart: function(){},
 			onScrollMove: function(){},
