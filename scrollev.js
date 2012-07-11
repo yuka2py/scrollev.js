@@ -30,7 +30,7 @@
 				options.onScrollMove.apply(target);
 			}
 			lastScrollTime = (+ new Date());
-		}
+		};
 		
 		var scrollEndEvnetDetector = function() {
 			if (lastScrollTime + options.detectionDuration < (+ new Date())) {
@@ -38,7 +38,8 @@
 				options.onScrollEnd.apply(target);
 				lastScrollTime = -1;
 			}
-		}
+		};
+		
 		target.scroll(scrollEventHandler);
 		return this;
 	};
